@@ -12,7 +12,7 @@ for a in ['Germline classification', 'Variant type', 'Molecular consequence']:
 
     for i in germ_line_classification_headings:
         if a == 'Molecular consequence':
-            if germ_line_classification.count(i) < 100:
+            if germ_line_classification.count(i) < 200:
                 continue
             else:
                 germ_line_classification_counts.update({
