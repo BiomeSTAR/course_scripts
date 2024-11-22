@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('./clinvar_result.tsv', sep='\t')
+df = pd.read_csv('./clinvar_result.txt', sep='\t')
 
 for a in ['Germline classification', 'Variant type', 'Molecular consequence']:
     germ_line_classification = list(df[a])
