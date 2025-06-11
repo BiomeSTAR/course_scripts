@@ -1,7 +1,7 @@
 %% Matlab script to analyze and visualize clinical trials data
 
 % Read and store spreadsheet data as a structure
-ClinicalTrialsResults = table2struct( readtable('SampleData_2.xlsx'));
+ClinicalTrialsResults = table2struct( readtable('data.xlsx'));
 
 %Extract phases:
 Phases = categorical([ClinicalTrialsResults.Phase]);
