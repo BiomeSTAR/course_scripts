@@ -3,11 +3,6 @@
 % Read and store spreadsheet data as a structure
 ClinicalTrialsResults = table2struct( readtable('data.xlsx'));
 
-%Extract phases:
-Phases = categorical([ClinicalTrialsResults.Phase]);
-PhasesCategories = unique(Phases);
-
-
 subplot(2,2,1)
 %Extract Therapy Mechanism:
 Mechanism = categorical({ClinicalTrialsResults.TherapyMechanisms});
